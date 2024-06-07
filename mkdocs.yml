@@ -1,0 +1,39 @@
+site_name: VISSET documentation
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+plugins:
+   - glightbox
+
+nav:
+  - HOME: index.md
+  - USER'S MANUAL:
+    - Overview: user_manual/overview.md
+    - Convention: user_manual/convention.md
+    - View asset:
+      - List all assets: user_manual/list_all.md
+      - List by category: user_manual/list_by_cat.md
+      - List by model No.: user_manual/list_by_no.md
+      - List your checkout asset: user_manual/list_your.md
+      - List robot & project asset: user_manual/list_pro.md
+    - Checkin/Checkout asset:
+      - Checkout for personal use: user_manual/checkout1.md
+      - Checkout for robot: user_manual/checkout2.md
+      - Checkout for project: user_manual/checkout3.md
+      - Checkin asset: user_manual/checkin.md
+    - Manage asset:
+      - Edit asset: user_manual/edit_asset.md
+      - Edit robot: user_manual/edit_robot.md
+      - Edit project & location: user_manual/edit_project.md
+  - ADMIN'S MANUAL: 
+    - Bringup server : admin_manual/bringup_server.md
+    - Backup data: admin_manual/backup.md
